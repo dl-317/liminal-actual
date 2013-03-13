@@ -1,7 +1,7 @@
 var express = require("express")
 var app = express();
 
-app.get("*", function(req, res) {
+app.use(function(req, res, next) {
     var body = "system online";
     res.writeHead(404, {
         "Content-Type": "text/plain",
