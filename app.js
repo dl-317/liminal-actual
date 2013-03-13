@@ -1,6 +1,8 @@
 var express = require("express")
 var app = express();
 
+app.use(express.static("static"));
+
 app.use(function(req, res, next) {
     var body = "system online";
     res.writeHead(404, {
