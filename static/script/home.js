@@ -5,7 +5,7 @@ $(document).ready(function() {
         success: function(data, status, xhr) {
             console.log(data);
             if (data)
-                $("#identification").text(JSON.stringify(data));
+                $("#identification").text(data.handle);
             else
                 $("#identification").html("<a href=\"/auth\">Log In</a>");
         },
