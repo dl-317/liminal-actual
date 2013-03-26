@@ -3,7 +3,6 @@ $(document).ready(function() {
         url: "/me",
         dataType: "json",
         success: function(data, status, xhr) {
-            console.log(data);
             if (data)
                 $("#identification").text(data.handle);
             else
@@ -13,7 +12,6 @@ $(document).ready(function() {
             if (err instanceof SyntaxError)
                 $("#identification").text("bad response");
             else {
-                console.log(err);
                 $("#identification").text("error");
             }
         }
