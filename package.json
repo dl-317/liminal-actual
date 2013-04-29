@@ -12,7 +12,7 @@
         "passport-google": "0.3.x",
         "redis": "0.7.x",
         "hiredis": "0.1.x"
-    }
+    },
     licenses: {
         type: "MIT",
         url: "https://github.com/dl-317/liminal-actual/blob/master/LICENSE"
