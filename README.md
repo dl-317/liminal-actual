@@ -2,7 +2,8 @@ Liminal
 =======
 
 **lim·i·nal** /ˈlimənl/  
-Adjective  
+Adjective
+
 1. Of or relating to a transitional or initial stage of a process.
 1. Occupying a position at, or on both sides of, a boundary or threshold.
 
