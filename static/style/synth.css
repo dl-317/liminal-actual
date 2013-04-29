@@ -1,0 +1,105 @@
+@media all and (min-width: 67em) {
+    #controller.step {
+        width: 42em;
+    }
+}
+
+@media all and (max-width: 67em) {
+    #controller.step {
+        width: 21em;
+    }
+}
+
+@media all and (max-width: 36em) {
+    #controller.step {
+        width: 10.5em;
+    }
+}
+
+body {
+    background:
+        radial-gradient(closest-side, #757575, transparent) 0 0,
+        black;
+    background-size: 100% 10px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#patch {
+    background: linear-gradient(to bottom, #833 0%,#722 100%);
+    border-radius: 0.25em;
+    box-shadow: inset 0 0 0.2em 0.2em #000;
+    height: 5em;
+}
+
+#controller {
+    background:
+        radial-gradient(black 15%, transparent 16%) 0 0,
+        radial-gradient(black 15%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size: 16px 16px;
+    border: 0.2em solid #CCC;
+    box-shadow: inset 0 0 0.4em 0.01em #000;
+    display: inline-block;
+}
+
+#controller.step {
+    border-radius: 0.5em;
+    line-height: 0.5em;
+    margin: 1em;
+    padding: 0.25em;
+    text-align: center;
+}
+
+#controller.step .switch {
+    display: inline-block;
+}
+
+.switch {
+    border: 0.05em solid #AAA;
+    border-radius: 0.2em;
+    box-shadow: 0.1em 0.1em 0.4em 0 #000;
+    height: 1.5em;
+    margin: 0.25em;
+    padding: 0.25em;
+    position: relative;
+    width: 1.5em;
+    transition: all 0.2s ease;
+
+    background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
+}
+
+.switch:hover {
+    border-color: #AB6;
+    box-shadow: 0 0 0.5em 0.1em #AB6, inset 0 0 1em 0.2em #AB6;
+    transform: scale(1.05, 1.05);
+    -webkit-transform: scale(1.05, 1.05);
+}
+
+.switch.active:hover {
+    border-color: #A6B;
+    box-shadow: 0 0 0.5em 0.1em #A6B, inset 0 0 1em 0.2em #A6B;    
+}
+
+.switch:active {
+/*    border-color: #AB6;
+    box-shadow: 0 0 0.5em 0.3em #AB6, inset 0 0 1em 0.2em #AB6;*/
+    transform: scale(0.95, 0.95);
+    -webkit-transform: scale(0.95, 0.95);
+}
+
+.switch.active {
+    border-color: #6AB;
+    box-shadow: 0 0 0.5em 0.1em #6AB, inset 0 0 1em 0.2em #6AB;
+}
+
+.meter {
+    display: inline-block;
+}
+
+.meter:hover {
+    background-color: rgba(120,120,220,0.4);
+    background-color: rgba(255,255,255,0.4);
+}
